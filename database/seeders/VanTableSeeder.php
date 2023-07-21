@@ -27,6 +27,8 @@ class VanTableSeeder extends Seeder
             $van->seat = $faker->randomElements([5, 7, 9]);
             $van->engineCapacity = $faker->randomNumber(3,7) * 500;
             $van->weight = $faker->randomNumber(1000,5000);
+            $van->fuel = $faker->randomElement(["benzina", "diesel", "metano", "elettrico"]);
+            $van->color = $faker->randomElement(["nero", "bianco", "grigio", "rosso", "blu"]);
 
             $van->save();
         }

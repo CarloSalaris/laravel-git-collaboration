@@ -23,6 +23,8 @@ return new class extends Migration
             $table->integer('weight');
             $table->string('price', 32);
             $table->string('seat', 2);
+            $table->string('fuel', 32);
+            $table->string('color', 32);
 
             $table->timestamps();
         });

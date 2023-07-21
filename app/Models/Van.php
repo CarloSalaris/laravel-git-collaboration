@@ -18,5 +18,8 @@ class Van extends Model
         "image",
         "engineCapacity",
         "weight",
+        "fuel",
+        "color",
+
     ];
 }
