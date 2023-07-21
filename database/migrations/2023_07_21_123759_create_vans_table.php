@@ -25,6 +25,8 @@ return new class extends Migration
             $table->string('seat', 2);
             $table->string('fuel', 32);
             $table->string('color', 32);
+            $table -> string('model', 10);
+            $table -> date('releaseDate');
 
             $table->timestamps();
         });

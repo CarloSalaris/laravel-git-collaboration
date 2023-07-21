@@ -20,6 +20,8 @@ class Van extends Model
         "weight",
         "fuel",
         "color",
-
+        "model",
+        "releaseDate"
+        
     ];
 }
