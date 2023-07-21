@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Faker\Generator as Faker;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Van;
@@ -13,8 +14,14 @@ class VanTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(Faker $faker)
     {
-        Van :: factory() -> count(10) -> create();
+        for ($i=0; $i < 10; $i++) {
+
+            $van = new Van();
+            $van -> brand = $faker -> company();
+
+            $van -> save();
+        }
     }
 }

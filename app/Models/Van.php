@@ -10,6 +10,7 @@ class Van extends Model
     use HasFactory;
 
     protected $fillable = [
+
         "brand"
     ];
 }
