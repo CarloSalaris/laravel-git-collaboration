@@ -17,6 +17,7 @@ return new class extends Migration
             $table -> id();
 
             $table -> string('brand', 32);
+            $table -> boolean('used');
 
             $table -> timestamps();
         });

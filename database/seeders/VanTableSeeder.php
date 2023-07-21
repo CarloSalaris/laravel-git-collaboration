@@ -20,6 +20,7 @@ class VanTableSeeder extends Seeder
 
             $van = new Van();
             $van -> brand = $faker -> company();
+            $van -> used = $faker -> boolean();
 
             $van -> save();
         }
