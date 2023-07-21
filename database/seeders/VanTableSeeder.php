@@ -20,6 +20,8 @@ class VanTableSeeder extends Seeder
 
             $van = new Van();
             $van -> brand = $faker -> company();
+            $van -> model = $faker -> bothify('???-###-??');
+            $van -> releaseDate = $faker -> date();
 
             $van -> save();
         }
