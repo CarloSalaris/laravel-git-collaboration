@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('brand', 32);
             $table->boolean('used');
             $table->string('image', 255);
-
-
+            $table->integer('engineCapacity');
+            $table->integer('weight');
             $table->string('price', 32);
             $table->string('seat', 2);
 

@@ -15,6 +15,8 @@ class Van extends Model
         "price",
         "seat",
         "used",
-        "image"
+        "image",
+        "engineCapacity",
+        "weight",
     ];
 }

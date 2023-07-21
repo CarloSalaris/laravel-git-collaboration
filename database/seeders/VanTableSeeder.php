@@ -25,6 +25,8 @@ class VanTableSeeder extends Seeder
             $van->image = "https://picsum.photos/200/300";
             $van->price = $faker->numberBetween(999, 29999);
             $van->seat = $faker->randomElements([5, 7, 9]);
+            $van->engineCapacity = $faker->randomNumber(3,7) * 500;
+            $van->weight = $faker->randomNumber(1000,5000);
 
             $van->save();
         }
