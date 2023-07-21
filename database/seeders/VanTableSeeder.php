@@ -20,6 +20,8 @@ class VanTableSeeder extends Seeder
 
             $van = new Van();
             $van -> brand = $faker -> company();
+            $van -> fuel = $faker -> randomElement(["benzina", "diesel", "metano", "elettrico"]);
+            $van -> color = $faker -> randomElement(["nero", "bianco", "grigio", "rosso", "blu"]);
 
             $van -> save();
         }
