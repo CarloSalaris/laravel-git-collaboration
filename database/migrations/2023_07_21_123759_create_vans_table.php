@@ -17,6 +17,9 @@ return new class extends Migration
             $table->id();
 
             $table->string('brand', 32);
+            $table->boolean('used');
+            $table->string('image', 255);
+
 
             $table->string('price', 32);
             $table->string('seat', 2);

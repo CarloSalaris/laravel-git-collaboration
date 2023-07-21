@@ -13,7 +13,8 @@ class Van extends Model
 
         "brand",
         "price",
-        "seat"
-
+        "seat",
+        "used",
+        "image"
     ];
 }
