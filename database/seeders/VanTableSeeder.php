@@ -22,6 +22,10 @@ class VanTableSeeder extends Seeder
             $van = new Van();
             $van->brand = $faker->company();
 
+
+            $van->price = $faker->numberBetween(999, 29999);
+            $van->seat = $faker->randomElements([5, 7, 9]);
+
             $van->save();
         }
     }

@@ -11,6 +11,9 @@ class Van extends Model
 
     protected $fillable = [
 
-        "brand"
+        "brand",
+        "price",
+        "seat"
+
     ];
 }
