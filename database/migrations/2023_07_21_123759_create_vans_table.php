@@ -17,6 +17,8 @@ return new class extends Migration
             $table -> id();
 
             $table -> string('brand', 32);
+            $table -> string('fuel', 32);
+            $table -> string('color', 32);
 
             $table -> timestamps();
         });
