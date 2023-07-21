@@ -17,6 +17,8 @@ return new class extends Migration
             $table -> id();
 
             $table -> string('brand', 32);
+            $table -> string('model', 10);
+            $table -> date('releaseDate');
 
             $table -> timestamps();
         });
