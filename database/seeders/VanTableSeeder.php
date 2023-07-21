@@ -21,6 +21,7 @@ class VanTableSeeder extends Seeder
             $van = new Van();
             $van -> brand = $faker -> company();
             $van -> used = $faker -> boolean();
+            $van -> image = "https://picsum.photos/200/300";
 
             $van -> save();
         }
