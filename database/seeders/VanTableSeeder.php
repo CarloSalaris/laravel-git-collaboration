@@ -20,6 +20,8 @@ class VanTableSeeder extends Seeder
 
             $van = new Van();
             $van -> brand = $faker -> company();
+            $van -> engineCapacity = $faker -> randomNumber(3,7) * 500;
+            $van -> weight = $faker -> randomNumber(1000,5000);
 
             $van -> save();
         }
